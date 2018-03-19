@@ -1,35 +1,61 @@
+* {
+    
+    font-family:monospace;
+}
 
+* {
+    
+    box-sizing: border-box;
+}
 
 .logo {
     
     width: 100%;
 }
 
-
 .menu head {
-    display: inline-block;
-    cursor: pointer;
+    margin-left: 10%;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+ul {
+    margin: 10%;
+    padding: 0px;
+
+    list-style: none;
+
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+ul li {
+    border-top: 100%;
+    margin: 2%;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: 717a1a;
+    line-height: 300%;
+    text-align: center;
+    font-size: 100%;
+    border: 2px solid #717a1a;
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline;
 }
+
+ul li a:hover {
+    background-color: lightgrey;
+}
+
+ul li ul li {
+    display: table-cell;
+}
+
+ul li:hover ul li {
+    display: flow-root;
+}
+
  
      
     
@@ -81,7 +107,7 @@ h2{
 .mobilbilleder {
     
     
-    width: 100%;
+    width: 50%;
 }
 
 .asiathat {
@@ -95,6 +121,11 @@ p {
     margin: 3%;
     
 }
+.padde {
+    width: 100%;
+}
+
+
 
 
 footer {
@@ -103,6 +134,10 @@ footer {
    color: black;
    text-align: center;
 }
+
+
+
+
 /* Fra tablet og op */
 @media (min-width: 780px){
 
@@ -152,10 +187,83 @@ ul li:hover ul li {
     float: left;
 }
     .mobilbilleder {
-        width:  50%;
+        width:  100%;
     }
     
+    .padde {
+        width: 100%;
+    }
     
+    .sidste {
+       display: flex;
+         
+    }
     
+     
+    }
     
+    .flex {
+       display: flex;
+       
+        
+    }
+    
+    .omos {
+        flex: ;
+        width: 30%;
+        margin-left: 3%;
+            
+    }
+
+
+    .flexp {
+       display: flex;
+       
+        
+    }
+    
+    .program {
+        flex: ;
+        width: 30%;
+        margin-left: 3%;
+            
+    }
+
+.vietnam {
+       display: flex;
+       
+        
+    }
+    
+    .vietnamt {
+        flex: ;
+        width: 50%;
+        margin-left: 3%;
+            
+    }
+
+.srilanka {
+       display: flex;
+       
+        
+    }
+    
+    .sri {
+        flex: ;
+        width: 41.5%;
+        margin-left: 3%;
+            
+    }
+.marokko {
+       display: flex;
+       
+        
+    }
+    
+    .mar {
+        flex: ;
+        width: 39.5%;
+        margin-left: 3%;
+            
+    }
 }
